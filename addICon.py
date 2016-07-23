@@ -11,9 +11,10 @@ class Example(QWidget):
 
 
     def initUI(self):
-
+        # 将窗口在屏幕上显示，并设置了他的尺寸，分别是（x轴位置，y轴位置，窗口的宽度，窗口的高度）
         self.setGeometry(300,300,300,220)
         self.setWindowTitle('Icon')
+        # 设置显示的icon
         self.setWindowIcon(QIcon('web.png'))
 
         self.show()
