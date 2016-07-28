@@ -21,6 +21,7 @@ class Example(QWidget):
         vbox.addWidget(lcd)
         vbox.addWidget(sld)
 
+        # set layout
         self.setLayout(vbox)
         # 将滑块条的valueChanged信号和lcd数字显示的display槽连接在一起
         sld.valueChanged.connect(lcd.display)
